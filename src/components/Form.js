@@ -1,5 +1,6 @@
 import React from "react";
 function Form() {
+    function generate() {}
     return (
         <div>
             <div className="div-form">
