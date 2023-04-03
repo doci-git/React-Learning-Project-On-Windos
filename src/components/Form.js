@@ -15,7 +15,7 @@ function Form() {
             <button className="form-button" onClick={generate}>
                 Generate meme
             </button>
-            <img src={image} alt="" />
+            <img className="imgs" src={image} alt="" />
         </div>
     );
 }
