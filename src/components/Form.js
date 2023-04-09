@@ -2,11 +2,18 @@ import React, { useState } from "react";
 import memeData from "./memeData.js";
 
 function Form() {
-    const [image, setimage] = useState("https://i.imgflip.com/21tqf4.jpg");
+    const [meme,setMeme]=React.useState({
+        topText:'',
+        bottomText:'',
+        randomImg:'https://i.imgflip.com/21tqf4.jpg'
+    })
+
+    const [allImage, setAllImage] = useState(memeData);
     function generate() {
         const datas = memeData.data.memes;
         const random = Math.floor(Math.random() * datas.length);
-        setimage(datas[random].url);
+        const url=datas[random].url
+        setAllImage();
     }
     return (
         <div className="div-form">
